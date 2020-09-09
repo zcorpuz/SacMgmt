@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/zcorpuz/SacMgmt/issues"
   },
-  "homepage": "https://github.com/zcorpuz/SacMgmt#readme"
+  "homepage": "https://github.com/zcorpuz/SacMgmt#readme",
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.30",
+    "@fortawesome/react-fontawesome": "^0.1.11"
+  }
 }
