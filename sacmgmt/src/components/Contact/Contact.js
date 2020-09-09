@@ -65,25 +65,31 @@ export class Contact extends Component {
                 <h3>Contact Info</h3>
                 <p>
                   <span>
-                    <i className="fas fa-map-marker-alt"></i> Address
+                    <i className="fas fa-map-marker-alt"></i> Address: 
                   </span>
-                  {this.props.data ? this.props.data.address : "loading"}
+                   2701 Cottage Way, Suite 9 Sacramento, CA 95825
                 </p>
               </div>
               <div className="contact-item">
                 <p>
                   <span>
-                    <i className="fa fa-phone"></i> Phone
+                    <i className="fa fa-phone"></i>Phone:
                   </span>{" "}
-                  {this.props.data ? this.props.data.phone : "loading"}
+                  (916) 974-0147
+                </p>
+                <p>
+                  <span>
+                    <i className="fa fa-phone"></i>Fax:
+                  </span>{" "}
+                  (916) 974-0174
                 </p>
               </div>
               <div className="contact-item">
                 <p>
                   <span>
-                    <i className="fa fa-envelope-o"></i> Email
+                    <i className="fa fa-envelope-o"></i>Email:
                   </span>{" "}
-                  {this.props.data ? this.props.data.email : "loading"}
+                  info@sacmgmt.net
                 </p>
               </div>
             </div>
@@ -93,19 +99,14 @@ export class Contact extends Component {
                   <ul>
                     <li>
                       <a
-                        href={this.props.data ? this.props.data.facebook : "/"}
+                        href="https://www.facebook.com/sacmgmt" target="_blank"
                       >
                         <i className="fa fa-facebook"></i>
                       </a>
                     </li>
                     <li>
-                      <a href={this.props.data ? this.props.data.twitter : "/"}>
+                      <a href="https://www.linkedin.com/company/sacmgmt" target="_blank">
                         <i className="fa fa-twitter"></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a href={this.props.data ? this.props.data.youtube : "/"}>
-                        <i className="fa fa-youtube"></i>
                       </a>
                     </li>
                   </ul>
