@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import "./style.css";
 
 export default class Porfolio extends Component {
     state = {
@@ -26,7 +27,7 @@ export default class Porfolio extends Component {
                             <p>{serviceData.blurbTwo}</p>
                             <div className="hoa-bullet-list">
                                 <ul>
-                                    {serviceData.hoaBullets.map(hoaItem =>   <li key={hoaItem.key}>{hoaItem.oneItem}</li>)}
+                                    {serviceData.hoaBullets.map(hoaItem => <li key={hoaItem.key}>{hoaItem.oneItem}</li>)}
                                 </ul>
                             </div>
                         </div>
@@ -35,10 +36,15 @@ export default class Porfolio extends Component {
                             {serviceData.homeownerBox.map(item => {
                                 return(
                                     <div key={item.key}>
-                                        <h4>{item.name}</h4>
-                                        <ul>
-                                            {item.bullets.map(bullet =>  <li key={bullet.key}>{bullet.oneBullet}</li>)}
-                                        </ul>
+                                        <div className="hoa-service-card">
+                                            <h4>{item.name}</h4>
+                                            <a href={`#${item.modal}`} >Find out More</a>
+                                        </div>
+                                        <div id={item.modal}>
+                                            <ul>
+                                                {item.bullets.map(bullet => <li key={bullet.key}>{bullet.oneBullet}</li>)}
+                                            </ul>
+                                        </div>
                                     </div>
                                 )
                             })}
@@ -50,14 +56,15 @@ export default class Porfolio extends Component {
                     {serviceData.otherServiceBox.map(item => {
                         return(
                             <div key={item.key}>
-                                <h3>{item.name}</h3>
-                                <ul>
-                                    {item.bullets.map(bullet => {
-                                        return(
-                                            <li key={bullet.key}>{bullet.oneBullet}</li>
-                                        )
-                                    })}
-                                </ul>
+                                <div>
+                                    <h3>{item.name}</h3>
+                                    <a href={`#${item.modal}`} >Find out More</a>
+                                </div>
+                                <div id={item.modal}>
+                                    <ul>
+                                        {item.bullets.map(bullet => <li key={bullet.key}>{bullet.oneBullet}</li>)}
+                                    </ul>
+                                </div>
                             </div>
                         )
                     })}
@@ -66,4 +73,3 @@ export default class Porfolio extends Component {
         )
     }    
 }
-
