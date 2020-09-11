@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
-import './App.css';
 import { Contact } from './components/Contact/Contact';
+import { Aboutus } from './components/Contact/Aboutus';
 
 function App() {
   return (
     <div>
-     <Contact /> 
+    <Aboutus />
+    <Contact /> 
     </div>
   );
 }
