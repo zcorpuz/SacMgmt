@@ -75,6 +75,7 @@ hr {
 	margin: 0 auto;
 	margin-top: 10px;
 	background: grey;
+	display: flex;
   }
 
 
