@@ -1,75 +1,112 @@
 let serviceData = {
+    blurbOne: "Sacramento Management Co. Inc., specializes in providing personalized financial and property management services for homeowners associations. We work closely with associations to determine how we can meet your needs by providing personal service, attention to detail, and a commitment to your community. Our thorough monthly financial services, including full accounting reports, banking services and delinquency management, help you serve your community with an organized, accountable approach. Our primary objective is to assist the Board of Directors in managing your association in order to protect the investment of the association members, and to achieve the goals of the association in the most effective manner possible. Our primary objective is to assist the Board of Directors in managing your association in order to protect the investment of the association members, and to achieve the goals of the association in the most effective manner possible.",
+    blurbTwo: "Homeowners that become board members often lack the qualification and experience to enforce the covenants, conditions, and restrictions (CC&R's) of their associations. We take pride in the fact that we respond promptly and courteously to the requests of the association residents. We are on call 24 hours a day in order to meet the emergency needs of your association.",
+    hoaBullets: [
+        {
+            key: "hoa-1",
+            oneItem: "Schedule, coordinate and attend board meetings."
+        },
+        {
+            key: "hoa-2",
+
+            oneItem: "Homeowner packages"
+        },
+        {
+            key: "hoa-3",
+            oneItem: "Supervising and monitoring contractors"
+        },
+        {
+            key: "hoa-4",
+            oneItem: "Monthly inspections"
+        },
+        {
+            key: "hoa-5",
+            oneItem: "Annual budget preparation"
+        },
+        {
+            key: "hoa-6",
+            oneItem: "24 hours a day, seven days a week emergency services"
+        },
+        {
+            key: "hoa-7",
+            oneItem: "Enforce the Association CC&R provisions, policies, and rules and regulations."
+        },
+        {
+            key: "hoa-8",
+            oneItem: "Interface with governmental agencies, attorneys, CPAs, and vendors."
+        }
+    ],
     homeownerBox: [
         {
             key: "1",
             name: "HOA Accounting",
             bullets: [
                 {
-                    key: "hoa-1",
+                    key: "accounting-1",
                     oneBullet: "Provide Month end financials reports to boards"
                 },
                 {
-                    key: "hoa-2",
+                    key: "accounting-2",
                     oneBullet: "Balance sheet, Income Sheet, AR delinquency report"
                 },  
                 {
-                    key: "hoa-3",
+                    key: "accounting-3",
                     oneBullet: "Prepaid reports, check register, Bank Statement"
                 },  
                 {
-                    key: "hoa-4",
+                    key: "accounting-4",
                     oneBullet: "Bank verification of Bank Reconciliation"
                 },  
                 {
-                    key: "hoa-5",
+                    key: "accounting-5",
                     oneBullet: "Create Tax Packets for CPA"
                 }, 
                 {
-                    key: "hoa-6",
+                    key: "accounting-6",
                     oneBullet: "Prepare and mail- Vendor & IRS 1099/1096 filings"
                 },  
                 {
-                    key: "hoa-7",
+                    key: "accounting-7",
                     oneBullet: "Monthly Financial Reports to Board members"
                 },  
                 {
-                    key: "hoa-8",
+                    key: "accounting-8",
                     oneBullet: "Assess monthly Late Fees"
                 },  
                 {
-                    key: "hoa-9",
+                    key: "accounting-9",
                     oneBullet: "Prepare and mail quarterly bills"
                 },  
                 {
-                    key: "hoa-10",
+                    key: "accounting-10",
                     oneBullet: "Collection of assessments and other income that is due to the community."
                 },  
                 {
-                    key: "hoa-11",
+                    key: "accounting-11",
                     oneBullet: "Maintains, coordinates, and prepares tax filings and state corporations commission filings"
                 },  
                 {
-                    key: "hoa-12",
+                    key: "accounting-12",
                     oneBullet: "Prepares information for year-end compilation reports"
                 },  
                 {
-                    key: "hoa-13",
+                    key: "accounting-13",
                     oneBullet: "Maintains association checking and reserve accounts"
                 },  
                 {
-                    key: "hoa-14",
+                    key: "accounting-14",
                     oneBullet: "Pays all vendor invoices, insurance premiums, utilities and any other A/P bills due"
                 },  
                 {
-                    key: "hoa-15",
+                    key: "accounting-15",
                     oneBullet: "Prepares monthly financial reports including vendor paid invoices if required"
                 },  
                 {
-                    key: "hoa-16",
+                    key: "accounting-16",
                     oneBullet: "Posts and monitors any late charges, special assessments, CC&R fines when CC&R policies allow"
                 },  
                 {
-                    key: "hoa-17",
+                    key: "accounting-17",
                     oneBullet: "Works with board and homeowners on any concerns or questions they have regarding accounting explanation or concerns."
                 }
             ]
