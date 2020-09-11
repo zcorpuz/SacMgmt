@@ -1,12 +1,15 @@
 import React, { Component } from 'react';
+import './App.css';
+import Nav from "./components/Nav/index";
 import { Contact } from './components/Contact/Contact';
 import { Aboutus } from './components/Contact/Aboutus';
 
 function App() {
   return (
     <div>
-    <Aboutus />
-    <Contact /> 
+    <Nav />
+     <Aboutus />
+     <Contact /> 
     </div>
   );
 }
