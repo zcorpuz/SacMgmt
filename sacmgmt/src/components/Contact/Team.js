@@ -25,7 +25,7 @@ function Team() {
         <button onClick={() => setIsOpen(!isOpen)}>Meet Our Team</button>
         {isOpen ? (
           <div className="modal">
-            <p>Modal is open</p>
+            <p>Modal is open!!!</p>
           </div>
         ) : null}
       </div>
