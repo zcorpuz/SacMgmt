@@ -39,6 +39,7 @@ let serviceData = {
     homeownerBox: [
         {
             key: "1",
+            modal: "hoa",
             name: "HOA Accounting",
             bullets: [
                 {
@@ -113,6 +114,7 @@ let serviceData = {
         },
         {
             key: "2",
+            modal: "vendor",
             name: "Vendor AP",
             bullets: [
                 {
@@ -127,6 +129,7 @@ let serviceData = {
         },
         {
             key: "3",
+            modal: "receipts",
             name: "Receipts A/R",
             bullets: [
                 {
@@ -147,6 +150,7 @@ let serviceData = {
     otherServiceBox: [
         {
             key: "01",
+            modal: "commercial",
             name: "Commercial/ Industrial Management",
             bullets: [
                 {
@@ -181,6 +185,7 @@ let serviceData = {
         },
         {
             key: "02",
+            modal: "residential",
             name: "Private Residential Management",
             bullets: [
                 {
