@@ -65,7 +65,7 @@ export class Contact extends Component {
                 <h3>Contact Info</h3>
                 <p>
                   <span>
-                    <i className="fas fa-map-marker-alt"></i> Address: 
+                    <i className="fas fa-map-marker-alt"></i>  Address:
                   </span>
                    2701 Cottage Way, Suite 9 Sacramento, CA 95825
                 </p>
@@ -74,21 +74,21 @@ export class Contact extends Component {
                 <p>
                   <span>
                     <i className="fa fa-phone"></i>Phone:
-                  </span>{" "}
+                  </span>
                   (916) 974-0147
                 </p>
                 <p>
                   <span>
-                    <i className="fa fa-phone"></i>Fax:
-                  </span>{" "}
+                    <i className="fa fa-fax"></i>Fax:
+                  </span>
                   (916) 974-0174
                 </p>
               </div>
               <div className="contact-item">
                 <p>
                   <span>
-                    <i className="fa fa-envelope-o"></i>Email:
-                  </span>{" "}
+                    <i className="fa fa-envelope"></i>Email:
+                  </span>
                   info@sacmgmt.net
                 </p>
               </div>
@@ -101,12 +101,12 @@ export class Contact extends Component {
                       <a
                         href="https://www.facebook.com/sacmgmt" target="_blank"
                       >
-                        <i className="fa fa-facebook"></i>
+                        <i className="fab fa-facebook-f"></i>
                       </a>
                     </li>
                     <li>
                       <a href="https://www.linkedin.com/company/sacmgmt" target="_blank">
-                        <i className="fa fa-twitter"></i>
+                        <i className="fab fa-twitter"></i>
                       </a>
                     </li>
                   </ul>
