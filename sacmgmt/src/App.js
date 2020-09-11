@@ -13,7 +13,7 @@ function App() {
       <Nav />
       <Aboutus />
       <ServiceSection serviceData={serviceData}/>
-      <Team />
+      {/* <Team /> */}
       <Contact /> 
     </div>
   );

@@ -19,7 +19,7 @@ export default class Porfolio extends Component {
             <div className="service-section">
                 <h1>Services</h1>
                 <div className="service-one">
-                    <h3>HOA Management</h3>
+                    <h2>HOA Management</h2>
                     <div>
                         <div className="blurb-one">
                             <p>Sacramento Management Co. Inc., specializes in providing personalized financial and property management services for homeowners associations. We work closely with associations to determine how we can meet your needs by providing personal service, attention to detail, and a commitment to your community. Our thorough monthly financial services, including full accounting reports, banking services and delinquency management, help you serve your community with an organized, accountable approach. Our primary objective is to assist the Board of Directors in managing your association in order to protect the investment of the association members, and to achieve the goals of the association in the most effective manner possible. Our primary objective is to assist the Board of Directors in managing your association in order to protect the investment of the association members, and to achieve the goals of the association in the most effective manner possible.</p>
@@ -44,7 +44,7 @@ export default class Porfolio extends Component {
                             {serviceData.homeownerBox.map(item => {
                                 return(
                                     <div key={item.key}>
-                                        <p>{item.name}</p>
+                                        <h4>{item.name}</h4>
                                         <ul>
                                             {item.bullets.map(bullet =>  <li key={bullet.key}>{bullet.oneBullet}</li>)}
                                         </ul>
@@ -54,12 +54,12 @@ export default class Porfolio extends Component {
                         </div> 
                     </div>
                 </div>
-                <h3>Other Services</h3>
+                <h2>Other Management Services</h2>
                 <div className="other-services">
                     {serviceData.otherServiceBox.map(item => {
                         return(
                             <div key={item.key}>
-                                <p>{item.name}</p>
+                                <h3>{item.name}</h3>
                                 <ul>
                                     {item.bullets.map(bullet => {
                                         return(
