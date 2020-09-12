@@ -99,13 +99,13 @@ export class Contact extends Component {
                   <ul>
                     <li>
                       <a
-                        href="https://www.facebook.com/sacmgmt" target="_blank"
+                        href="https://www.facebook.com/sacmgmt" target="_blank" rel="noopener noreferrer"
                       >
                         <i className="fab fa-facebook-f"></i>
                       </a>
                     </li>
                     <li>
-                      <a href="https://www.linkedin.com/company/sacmgmt" target="_blank">
+                      <a href="https://www.linkedin.com/company/sacmgmt" target="_blank" rel="noopener noreferrer">
                         <i className="fab fa-twitter"></i>
                       </a>
                     </li>

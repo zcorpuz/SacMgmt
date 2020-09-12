@@ -19,7 +19,7 @@ function ServiceSection(props) {
 
     return(
         <div className="service-section">
-            <h1>Services</h1>
+            <h1 className="serv-title">Services</h1>
             <div className="service-one">
                 <h2 className="serv-title">HOA Management</h2>
                 <div className="hoa-manage">
@@ -29,7 +29,7 @@ function ServiceSection(props) {
                     <div className="blurb-two">
                         <p>{props.serviceData.blurbTwo}</p>
                         <div className="hoa-bullet-list">
-                            <ul>
+                            <ul className="hoa-bullet-list">
                                 {props.serviceData.hoaBullets.map(hoaItem => <li key={hoaItem.key}>{hoaItem.oneItem}</li>)}
                             </ul>
                         </div>
@@ -71,8 +71,8 @@ function ServiceSection(props) {
                 {props.serviceData.otherServiceBox.map(item => {
                     return(
                         <div key={item.key}>
-                            <div>
-                                <h3 className="serv-title">{item.name}</h3>
+                            <div className="other-service-card">
+                                <h3>{item.name}</h3>
                                 <a href={`#${item.modal}`} onClick={() =>
                                     {setIsOpen(!isOpen)}} >Find out More
                                 </a>
