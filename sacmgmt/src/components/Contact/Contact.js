@@ -1,26 +1,30 @@
 import React, { Component } from "react";
-// import {
-//   interaction, layer, custom, control, //name spaces
-//   Interactions, Overlays, Controls,     //group
-//   Map, Layers, Overlay, Util    //objects
-// } from "react-openlayers";
+import L from 'leaflet';
+import 'leaflet/dist/leaflet.css';
+import styled from 'styled-components'
+
+const Wrapper = styled.div`
+  width: ${props => props.width};
+  height: ${props => props.height};
+`;
 
 export class Contact extends Component {
+  componentDidMount(){
+    this.map = L.map('map', {
+      center: [38, -121],
+      zoom: 10,
+      zoomControl: false
+    });
+
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      detectRetina: true,
+      maxZoom: 19,
+      maxNativeZoom: 17,
+      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    }).addTo(this.map);
+  }
 
   render() {
-    // const ol = require('openlayers');
-    // const map = new ol.Map({
-    //   target: 'map',
-    //   layers: [
-    //       new ol.layer.Tile({
-    //       source: new ol.source.OSM()
-    //       })
-    //   ],
-    //   view: new ol.View({
-    //       center: ol.proj.fromLonLat([-118.478890, 34.155240]),
-    //       zoom: 16
-    //   })
-    // });
     return (
       <div>
         <div id="contact">
@@ -79,40 +83,15 @@ export class Contact extends Component {
                 </form>
               </div>
             </div>
-            {/* <div className="col-md-3 map" id="map"></div> */}
-            {/* <Map view={{center: [0, 0], zoom: 2}}>
-              <Layers>
-                <layer.Tile/>
-                {/* <layer.Vector source={markers} style={markers.style} zIndex="1" /> */}
-              {/* </Layers>
-              <Overlays>
-                <Overlay 
-                  ref={comp => this.overlayComp = comp}
-                  element="#popup" />
-              </Overlays>
-              <Controls attribution={false} zoom={true}>
-                <control.Rotate />
-                <control.ScaleLine />
-                <control.FullScreen />
-                <control.OverviewMap />
-                <control.ZoomSlider />
-                <control.ZoomToExtent />
-                <control.Zoom />
-              </Controls> */}
-              {/* <Interactions>
-                <interaction.Select style={selectedMarkerStyle} />
-                <interaction.Draw source={markers} type='Point' />
-                <interaction.Modify features={markers.features} />
-              </Interactions> */}
-            {/* </Map> */}
-            <div className="col-md-2 col-md-offset-1 contact-info">
+            <Wrapper width="500px" height="720p" id="map" />
+            <div className="col-md-3 col-md-offset-1 contact-info">
               <div className="contact-item">
                 <h3>Contact Info</h3>
                 <p>
                   <span>
                     <i className="fas fa-map-marker-alt"></i>  Address:
                   </span>
-                   2701 Cottage Way, Suite 9 Sacramento, CA 95825
+                  2701 Cottage Way, Suite 9 Sacramento, CA 95825
                 </p>
               </div>
               <div className="contact-item">
