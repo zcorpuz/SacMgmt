@@ -115,10 +115,10 @@
     color: #000;
     text-decoration: none;
     cursor: pointer;
-}
+} */
 
 
-@keyframes modalopen {
+/* @keyframes modalopen {
     from {
       opacity: 0;
     }
@@ -136,5 +136,3 @@
 	background: grey;
 	display: flex;
 }
-
-
