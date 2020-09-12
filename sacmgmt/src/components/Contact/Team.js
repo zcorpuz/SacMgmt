@@ -1,9 +1,10 @@
-import React, {useState } from "react"
+import React, { useState } from "react"
 
 function Team() {
-  const [isOpen, setIsOpen] = useState(false)
+  const [isOpen, setIsOpen] = useState(false);
+  
   return(
-    <div className = "Team">
+    <div className="team">
       <button onClick={() =>
       {setIsOpen(!isOpen)
       console.log(isOpen)}}> Meet The Team</button>
