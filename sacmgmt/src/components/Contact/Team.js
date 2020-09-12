@@ -15,6 +15,7 @@ function Team() {
        : null}
     </div>
   )
+
 }
 
 export default Team
