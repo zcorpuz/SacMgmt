@@ -1,9 +1,9 @@
 import React, { Component } from "react";
-import {
-  interaction, layer, custom, control, //name spaces
-  Interactions, Overlays, Controls,     //group
-  Map, Layers, Overlay, Util    //objects
-} from "react-openlayers";
+// import {
+//   interaction, layer, custom, control, //name spaces
+//   Interactions, Overlays, Controls,     //group
+//   Map, Layers, Overlay, Util    //objects
+// } from "react-openlayers";
 
 export class Contact extends Component {
 
@@ -80,11 +80,11 @@ export class Contact extends Component {
               </div>
             </div>
             {/* <div className="col-md-3 map" id="map"></div> */}
-            <Map view={{center: [0, 0], zoom: 2}}>
+            {/* <Map view={{center: [0, 0], zoom: 2}}>
               <Layers>
                 <layer.Tile/>
                 {/* <layer.Vector source={markers} style={markers.style} zIndex="1" /> */}
-              </Layers>
+              {/* </Layers>
               <Overlays>
                 <Overlay 
                   ref={comp => this.overlayComp = comp}
@@ -98,13 +98,13 @@ export class Contact extends Component {
                 <control.ZoomSlider />
                 <control.ZoomToExtent />
                 <control.Zoom />
-              </Controls>
+              </Controls> */}
               {/* <Interactions>
                 <interaction.Select style={selectedMarkerStyle} />
                 <interaction.Draw source={markers} type='Point' />
                 <interaction.Modify features={markers.features} />
               </Interactions> */}
-            </Map>
+            {/* </Map> */}
             <div className="col-md-2 col-md-offset-1 contact-info">
               <div className="contact-item">
                 <h3>Contact Info</h3>
