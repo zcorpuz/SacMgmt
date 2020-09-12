@@ -1,12 +1,31 @@
 import React, { Component } from "react";
+import {
+  interaction, layer, custom, control, //name spaces
+  Interactions, Overlays, Controls,     //group
+  Map, Layers, Overlay, Util    //objects
+} from "react-openlayers";
 
 export class Contact extends Component {
+
   render() {
+    // const ol = require('openlayers');
+    // const map = new ol.Map({
+    //   target: 'map',
+    //   layers: [
+    //       new ol.layer.Tile({
+    //       source: new ol.source.OSM()
+    //       })
+    //   ],
+    //   view: new ol.View({
+    //       center: ol.proj.fromLonLat([-118.478890, 34.155240]),
+    //       zoom: 16
+    //   })
+    // });
     return (
       <div>
         <div id="contact">
           <div className="container">
-            <div className="col-md-8">
+            <div className="col-md-6">
               <div className="row">
                 <div className="section-title">
                   <h2>Get In Touch</h2>
@@ -60,7 +79,33 @@ export class Contact extends Component {
                 </form>
               </div>
             </div>
-            <div className="col-md-3 col-md-offset-1 contact-info">
+            {/* <div className="col-md-3 map" id="map"></div> */}
+            <Map view={{center: [0, 0], zoom: 2}}>
+              <Layers>
+                <layer.Tile/>
+                {/* <layer.Vector source={markers} style={markers.style} zIndex="1" /> */}
+              </Layers>
+              <Overlays>
+                <Overlay 
+                  ref={comp => this.overlayComp = comp}
+                  element="#popup" />
+              </Overlays>
+              <Controls attribution={false} zoom={true}>
+                <control.Rotate />
+                <control.ScaleLine />
+                <control.FullScreen />
+                <control.OverviewMap />
+                <control.ZoomSlider />
+                <control.ZoomToExtent />
+                <control.Zoom />
+              </Controls>
+              {/* <Interactions>
+                <interaction.Select style={selectedMarkerStyle} />
+                <interaction.Draw source={markers} type='Point' />
+                <interaction.Modify features={markers.features} />
+              </Interactions> */}
+            </Map>
+            <div className="col-md-2 col-md-offset-1 contact-info">
               <div className="contact-item">
                 <h3>Contact Info</h3>
                 <p>

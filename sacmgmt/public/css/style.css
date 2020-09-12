@@ -172,6 +172,10 @@ color: #acada8;
 .form-control:-ms-input-placeholder {
 color: #acada8;
 }
+.map {
+    height: 200px;
+    width: 100%;
+}
 #contact .contact-item {
 	margin: 20px 0;
 }
