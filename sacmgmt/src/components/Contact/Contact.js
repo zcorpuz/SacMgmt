@@ -1,28 +1,28 @@
 import React, { Component } from "react";
-import L from 'leaflet';
-import 'leaflet/dist/leaflet.css';
-import styled from 'styled-components'
+// import L from 'leaflet';
+// import 'leaflet/dist/leaflet.css';
+// import styled from 'styled-components'
 
-const Wrapper = styled.div`
-  width: ${props => props.width};
-  height: ${props => props.height};
-`;
+// const Wrapper = styled.div`
+//   width: ${props => props.width};
+//   height: ${props => props.height};
+// `;
 
 export class Contact extends Component {
-  componentDidMount(){
-    this.map = L.map('map', {
-      center: [38, -121],
-      zoom: 10,
-      zoomControl: false
-    });
+  // componentDidMount(){
+  //   this.map = L.map('map', {
+  //     center: [38, -121],
+  //     zoom: 10,
+  //     zoomControl: false
+  //   });
 
-    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-      detectRetina: true,
-      maxZoom: 19,
-      maxNativeZoom: 17,
-      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-    }).addTo(this.map);
-  }
+  //   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+  //     detectRetina: true,
+  //     maxZoom: 19,
+  //     maxNativeZoom: 17,
+  //     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+  //   }).addTo(this.map);
+  // }
 
   render() {
     return (
@@ -83,7 +83,6 @@ export class Contact extends Component {
                 </form>
               </div>
             </div>
-            <Wrapper width="500px" height="720p" id="map" />
             <div className="col-md-3 col-md-offset-1 contact-info">
               <div className="contact-item">
                 <h3>Contact Info</h3>
