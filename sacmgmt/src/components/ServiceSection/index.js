@@ -1,22 +1,15 @@
 import React, { useState } from "react";
+import Modal from "../ServiceModal"
 import "./style.css";
 
 function ServiceSection(props) {
 
-    const [isOpen, setIsOpen] = useState(false);
+    const [show, setShow] = useState(0);
 
-        // show: false
+    const openModalHandler = (value => {setShow(value)});
 
-    // showModal = e => {
-    //     this.setState({
-    //       show: !this.state.show
-    //     });
-    // };
-
-        // return (
-        //     <div>{props.serviceData.blurbOne}</div>
-        // )
-
+    const closeModalHandler = (value => {setShow(0)});
+    
     return(
         <div className="service-section">
             <h1 className="serv-title">Services</h1>
@@ -42,14 +35,20 @@ function ServiceSection(props) {
                             <div key={item.key}>
                                 <div className="hoa-service-card">
                                     <h4>{item.name}</h4>
-                                    <a href={`#${item.modal}`} onClick={() =>
-                                        {setIsOpen(!isOpen)}}>Find out More</a>
+                                    <a href={`#${item.modal}`} onClick={() => openModalHandler(item.modal)}>Find out More</a>
+                                   
                                 </div>
-                                {isOpen ? 
-                                    <div id={item.modal}  className="modal">
+                                <Modal 
+                                        item={item} 
+                                        show={show === item.modal} 
+                                        close={() => closeModalHandler(item.modal)}
+                                    />
+                                {/* {isOpen ?  */}
+                                    {/* <div id={item.modal}  className="modal">
                                         <div className="modal-content">
                                             <div className="modal-header">
-                                                <span className="contact-close">&times;</span>
+                                                <span className="close"
+                                                >&times;</span>
                                                 <h2>{item.name}</h2>
                                             </div>
                                         </div>
@@ -58,8 +57,8 @@ function ServiceSection(props) {
                                                 {item.bullets.map(bullet => <li key={bullet.key}>{bullet.oneBullet}</li>)}
                                             </ul>
                                         </div>
-                                    </div>
-                                : null }
+                                    </div> */}
+                                {/* : null } */}
                             </div>
                         )
                     })}
@@ -69,29 +68,36 @@ function ServiceSection(props) {
             <h2 className="serv-title">Other Management Services</h2>
             <div className="other-services">
                 {props.serviceData.otherServiceBox.map(item => {
+                    console.log("other-service", item);
                     return(
                         <div key={item.key}>
                             <div className="other-service-card">
                                 <h3>{item.name}</h3>
-                                <a href={`#${item.modal}`} onClick={() =>
-                                    {setIsOpen(!isOpen)}} >Find out More
-                                </a>
+                                <a href={`#${item.modal}`} onClick={() => openModalHandler(item.modal)}>Find out More</a>
+                               
                             </div>
-                            {isOpen ? 
-                                <div id={item.modal} className="modal">
+                            <Modal 
+                                    item={item} 
+                                    show={show === item.modal} 
+                                    close={() => closeModalHandler(item.modal)}
+                                />
+                            {/* {isOpen ?  */}
+                                {/* <div id={item.modal} className="modal">
                                     <div className="modal-content">
                                         <div className="modal-header">
-                                            <span className="contact-close">&times;</span>
+                                            <span className="close">&times;</span>
                                             <h2>{item.name}</h2>
                                         </div>
                                     </div>
                                     <div className="modal-body">
                                         <ul>
-                                            {item.bullets.map(bullet => <li key={bullet.key}>{bullet.oneBullet}</li>)}
+                                            {item.bullets.map(bullet => 
+                                                <li key={bullet.key}>{bullet.oneBullet}</li>
+                                            )}
                                         </ul>
                                     </div>
-                                </div>
-                            : null }
+                                </div> */}
+                            {/* : null } */}
                         </div>
                     )
                 })}
@@ -101,3 +107,40 @@ function ServiceSection(props) {
 }
 
 export default ServiceSection;
+
+
+// class Product extends Component {
+//     state = {
+//       showModal: 0
+//     };
+  
+//     getModal = value => {
+//       this.setState({ showModal: value });
+//     };
+  
+//     hideModal = value => {
+//       this.setState({ showModal: 0 });
+//     };
+  
+//     render() {
+//       return (
+//         <div className="container">
+//           {this.props.data.map((data, key) => (
+//             <div key={key} className="small">
+//               <p>Namsse: {data.name}</p>
+  
+//               <button onClick={() => this.getModal(data.id)}>Popup</button>
+  
+//               <Modal
+//                 show={this.state.showModal === data.id}
+//                 onHide={() => this.hideModal(data.id)}
+//                 name={data.name}
+//               />
+//             </div>
+//           ))}
+//         </div>
+//       );
+//     }
+//   }
+  
+//   export default Product;
