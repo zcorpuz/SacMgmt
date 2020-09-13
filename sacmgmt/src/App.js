@@ -7,6 +7,7 @@ import ServiceSection from './components/ServiceSection';
 // import Modal from './components/ServiceModal';
 import serviceData from "./serviceData"
 import Team  from './components/Contact/Team';
+import Map from './components/Map/Map';
 
 function App() {
   return (
@@ -16,7 +17,8 @@ function App() {
       <Team />
       {/* <Modal /> */}
       <ServiceSection serviceData={serviceData}/>
-      <Contact /> 
+      <Contact />
+      <Map />
     </div>
   );
 }
