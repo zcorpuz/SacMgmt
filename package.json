@@ -18,6 +18,8 @@
   "homepage": "https://github.com/zcorpuz/SacMgmt#readme",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.30",
-    "@fortawesome/react-fontawesome": "^0.1.11"
+    "@fortawesome/react-fontawesome": "^0.1.11",
+    "express": "^4.17.1",
+    "mongoose": "^5.10.5"
   }
 }
