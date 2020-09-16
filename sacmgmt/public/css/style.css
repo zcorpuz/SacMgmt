@@ -65,18 +65,41 @@ hr {
 	border: 0;
 }
 /* About & Team */
+<<<<<<< HEAD
+.aboutus {
+	/* display: flex; */
+}
+=======
 /* #Aboutus .Aboutus {
 
 } */
+>>>>>>> da9bfdf16a2b5ced2cf13ce97aefef22a5317590
 
-.modal {
+.modal-team {
+
+    height: 300px;
+    width: 300px;
+    background:#acada8;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  
+  }
+
+/* .modal {
 	width: 400px;
 	border: 1px solid grey;
 	margin: 0 auto;
 	margin-top: 10px;
 	background: grey;
+<<<<<<< HEAD
+  } */
+=======
 	display: flex;
 }
+>>>>>>> da9bfdf16a2b5ced2cf13ce97aefef22a5317590
 
 
 
