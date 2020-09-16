@@ -1,24 +1,7 @@
-import React, { useEffect, useState, useRef } from 'react'
-
+import React, { useState } from "react"
 
 function Team() {
-    const outside = useRef()
-    const [isOpen, setIsOpen] = useState(false)
-  
-    const handleClick = e => {
-      if (outside.current.contains(e.target)) {
-        return
-      }
-      setIsOpen(false)
-    }
-  
-    useEffect(() => {
-      const getClick = document.addEventListener('click', handleClick)
-  
-      return () => {
-        getClick()
-      }
-    }, [])
+  const [isOpen, setIsOpen] = useState(false);
   
     return (
       <div className="Team" ref={outside}>
@@ -34,5 +17,19 @@ function Team() {
 }
 
 export default Team;
+  return(
+    <div className="team">
+      <button onClick={() =>
+      {setIsOpen(!isOpen)
+      console.log(isOpen)}}> Meet The Team</button>
+      {isOpen ? 
+        <div className="modal-team">
+          <p> Modal is open </p>
+        </div>
+       : null}
+    </div>
+  )
 
 
+
+export default Team

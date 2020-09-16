@@ -1,7 +1,8 @@
 import React, { Component } from "react";
+
 import Team from "../Team/Team";
 
-export class Aboutus extends Component {
+class Aboutus extends Component {
     render() {
         return (
             <div className= "aboutus">
