@@ -65,15 +65,9 @@ hr {
 	border: 0;
 }
 /* About & Team */
-<<<<<<< HEAD
 .aboutus {
 	/* display: flex; */
 }
-=======
-/* #Aboutus .Aboutus {
-
-} */
->>>>>>> da9bfdf16a2b5ced2cf13ce97aefef22a5317590
 
 .modal-team {
 
@@ -94,12 +88,7 @@ hr {
 	margin: 0 auto;
 	margin-top: 10px;
 	background: grey;
-<<<<<<< HEAD
   } */
-=======
-	display: flex;
-}
->>>>>>> da9bfdf16a2b5ced2cf13ce97aefef22a5317590
 
 
 
