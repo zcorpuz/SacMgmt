@@ -1,7 +1,5 @@
 import React, { Component } from "react";
-
-import "./App.css";
-
+// import "./App.css";
 function Teammember({ name, role, message }) {
     return (
         <div className="team">

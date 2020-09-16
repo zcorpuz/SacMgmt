@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Teammember from './Teammember';
-import './App.css';
+//import './App.css';
 
 function Headshots () {
 
