@@ -9,20 +9,11 @@ import Headshots from './components/Team/Headshots';
 // import Team from './components/Team/Team';
 import { Contact } from './components/Contact/Contact';
 import Aboutus from './components/Aboutus/Aboutus';
-import Headshots from './components/Team/Headshots';
-import { Contact } from './components/Contact/Contact';
-import { Aboutus } from './components/Aboutus/Aboutus';
-
 function App() {
   return (
     <div>
     <Nav />
       <Hero backgroundImage= "https://www.lai.org/sites/default/files/images/home-page/h-lai-sacramento.jpg">
-    
-     <Headshots />
-    
-      <Nav />
-      <Hero backgroundImage= "https://www.lai.org/sites/default/files/images/home-page/h-lai-sacramento.jpg"> 
         <h1>Sacramento Management Company</h1>
       </Hero>
       <Aboutus />
@@ -35,3 +26,4 @@ function App() {
     </div>
   );
 }
+export default App;
