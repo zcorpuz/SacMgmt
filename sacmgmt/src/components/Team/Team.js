@@ -24,9 +24,10 @@ function Team() {
       <div className="Team" ref={outside}>
         <button onClick={() => setIsOpen(!isOpen)}>Meet Our Team</button>
         {isOpen ? (
-          <div className="modal">
-            <p>Modal is open!!!</p>
-          </div>
+          <div className="modal-team">
+
+            
+            </div>
         ) : null}
       </div>
     )

@@ -1,14 +1,16 @@
 import React, { Component } from 'react';
 import './App.css';
 import Nav from "./components/Nav/index";
+import Headshots from './components/Team/Headshots';
 import { Contact } from './components/Contact/Contact';
-import { Aboutus } from './components/Contact/Aboutus';
+import { Aboutus } from './components/Aboutus/Aboutus';
 
 function App() {
   return (
     <div>
     <Nav />
      <Aboutus />
+     <Headshots />
      <Contact /> 
     </div>
   );
