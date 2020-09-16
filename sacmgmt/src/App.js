@@ -1,10 +1,8 @@
 import React from 'react';
-// import './App.css';
 import Nav from "./components/Nav/index";
 import ServiceSection from "./components/ServiceSection";
 import serviceData from "./serviceData";
 import Hero from "../src/components/Hero";
-// import Map from "../src/components/Map";
 import Headshots from './components/Team/Headshots';
 // import Team from './components/Team/Team';
 import { Contact } from './components/Contact/Contact';
@@ -22,7 +20,6 @@ function App() {
       <ServiceSection serviceData={serviceData}/>
       <Headshots />
       <Contact />
-      {/* <Map /> */}
     </div>
   );
 }
