@@ -2,6 +2,7 @@
   "name": "sacmgmt",
   "version": "0.1.0",
   "private": true,
+  "proxy": "http://localhost:3001/",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.30",
     "@fortawesome/react-fontawesome": "^0.1.11",
