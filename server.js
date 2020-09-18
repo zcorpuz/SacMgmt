@@ -1,13 +1,11 @@
 const express = require("express");
 const bodyParser = require('body-parser');
-
-const mongoose = require("mongoose");
-const app = express();
 const cors = require('cors');
 
-const Contact = require("./models/index");
+const db = require('./db/index');
+const contactRouter = require('./routes/API');
 
-const routes = require('./routes/API');
+const app = express();
 
 const PORT = process.env.PORT || 3000;
 
@@ -25,21 +23,10 @@ if (process.env.NODE_ENV === "production") {
 
 app.get('/', (req, res) => {res.send('Hello World!')});
 
-// Add routes, both API and view
-app.use(routes);
+db.on('error', console.error.bind(console, 'MongoDB connection error:'));
 
-// Connect to the Mongo DB
-mongoose
-  .connect(process.env.MONGODB_URI || "mongodb://localhost/contactList",
-    { 
-      useNewUrlParser: true,  
-      useUnifiedTopology: true,
-      useCreateIndex: true,
-      useFindAndModify: false
-    })
-  .catch(e => {
-    console.error('Connection error', e.message)
-})
+// Add routes, both API and view
+app.use('/api', contactRouter);
 
 // Start the API server
 app.listen(PORT, function() {
