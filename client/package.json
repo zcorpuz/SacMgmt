@@ -2,6 +2,7 @@
   "name": "sacmgmt",
   "version": "0.1.0",
   "private": true,
+  "proxy": "http://localhost:3001/",
   "dependencies": {
     "@babel/polyfill": "^7.11.5",
     "@fortawesome/fontawesome-svg-core": "^1.2.30",

@@ -2,7 +2,7 @@ import React from 'react';
 import Nav from "./components/Nav/index";
 import ServiceSection from "./components/ServiceSection";
 import serviceData from "./serviceData";
-import Hero from "../src/components/Hero";
+import Hero from "./components/Hero";
 import Headshots from './components/Team/Headshots';
 // import Team from './components/Team/Team';
 import { Contact } from './components/Contact/Contact';

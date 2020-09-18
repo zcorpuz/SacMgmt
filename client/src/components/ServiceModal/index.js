@@ -10,12 +10,12 @@ function Modal({ show, close, item}) {
                 display: show ? "block" : "none",
             }}>
 
-            <div className="modal-header">
+            <div className="modal-header-box">
                 <p>{item.name}</p>
                 <span onClick={close} className="close-modal-btn">x</span>
 
             </div>
-            <div className="modal-content">
+            <div className="modal-content-box">
                 <div className="modal-body">
                     <ul>
                         {item.bullets.map(bullet => <li key={bullet.key}>{bullet.oneBullet}</li>)}
