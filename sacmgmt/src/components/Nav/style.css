@@ -2,7 +2,7 @@
   background: linear-gradient(90deg, #40423d 0%, #40423d 100%);
   height: 80px;
   display: flex;
-  justify-content: center;
+  justify-content: right;
   align-items: center;
   font-size: 1.2rem;
 }
@@ -12,12 +12,15 @@
   justify-self: start;
   margin-left: 20px;
   cursor: pointer;
+  width: 300px;
+  height: 300px;
+  position: relative;
 }
 
-.fa-react {
+/* .fa-react {
   margin-left: 0.5rem;
   font-size: 1.6rem;
-}
+} */
 
 .nav-menu {
   display: grid;
@@ -56,7 +59,7 @@
 
 @media screen and (max-width: 960px) {
   .NavbarItems {
-      position: relative;
+      position: sticky;
   }
 
   .nav-menu {
@@ -92,7 +95,8 @@
   }
 
   .navbar-logo {
-      position: absolute;
+      display: block;
+      position: relative;
       top: 0;
       left: 0;
       transform: translate(25%, 50%);
