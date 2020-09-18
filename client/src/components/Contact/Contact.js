@@ -1,13 +1,54 @@
 import React, { Component } from "react";
 import Map from "../Map/Map";
+import axios from 'axios'
+
 import "./style.css";
 
-const axios = require('axios');
+// const axios = require('axios');
 
 
-export class Contact extends Component {
+class Contact extends Component {
+  constructor(props) {
+		super(props)
+
+		this.state = {
+			name: '',
+			email: '',
+			message: ''
+		}
+	}
+
+
+	changeHandler = e => {
+		this.setState({ [e.target.name]: e.target.value })
+	}
+
+	submitHandler = e => {
+		e.preventDefault()
+		console.log(this.state)
+		axios
+			.post('http://localhost:3001/api/contact', this.state)
+			.then(response => {
+				console.log(response)
+			})
+			.catch(error => {
+				console.log(error)
+      })
+      
+      console.log(axios.post('http://localhost:3001/api/contact', this.state));
+	}
+
+
+
+
 
   render() {
+    const { name, email, message } = this.state;
+    console.log(name);
+    console.log(email);
+    console.log(message);
+
+
     return (
       <div>
         <div id="contact">
@@ -21,7 +62,8 @@ export class Contact extends Component {
                     will get back to you as soon as possible.
                   </p>
                 </div>
-                <form name="sentMessage" id="contactForm" noValidate>
+                <form onSubmit={this.submitHandler}
+                name="sentMessage" id="contactForm" noValidate>
                   <div className="row">
                     <div className="col-md-6">
                       <div className="form-group">
@@ -29,6 +71,9 @@ export class Contact extends Component {
                           type="text"
                           id="name"
                           className="form-control"
+                          name="name"
+							value={name}
+							onChange={this.changeHandler}
                           placeholder="Name"
                           required="required"
                         />
@@ -41,6 +86,9 @@ export class Contact extends Component {
                           type="email"
                           id="email"
                           className="form-control"
+                          name="email"
+							value={email}
+							onChange={this.changeHandler}
                           placeholder="Email"
                           required="required"
                         />
@@ -53,6 +101,9 @@ export class Contact extends Component {
                       name="message"
                       id="message"
                       className="form-control"
+                      name="message"
+							value={message}
+							onChange={this.changeHandler}
                       rows="4"
                       placeholder="Message"
                       required
@@ -60,7 +111,7 @@ export class Contact extends Component {
                     <p className="help-block text-danger"></p>
                   </div>
                   <div id="success"></div>
-                  <button type="submit" onSubmit={handleFormSubmit} method="POST" className="btn btn-custom btn-lg">
+                  <button type="submit" className="btn btn-custom btn-lg">
                     Send Message
                   </button>
                 </form>

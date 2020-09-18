@@ -47,7 +47,6 @@ function ServiceSection(props) {
             <h2 className="serv-title" id="other-serv-title">Other Management Services</h2>
             <div className="other-services">
                 {props.serviceData.otherServiceBox.map(item => {
-                    console.log("other-service", item);
                     return(
                         <div key={item.key}>
                             <div className="other-service-card">

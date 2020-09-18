@@ -14,8 +14,7 @@ function Team() {
   return(
     <div className="team">
       <button onClick={() =>
-      {setIsOpen(!isOpen)
-      console.log(isOpen)}}> Meet The Team</button>
+      {setIsOpen(!isOpen)}}> Meet The Team</button>
       {isOpen ?
         <div className="modal-team">
           <p> Modal is open </p>
