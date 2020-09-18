@@ -9,7 +9,7 @@ const Contact = require("./models/index");
 
 const routes = require('./routes/API');
 
-const PORT = process.env.PORT || 3001;
+const PORT = process.env.PORT || 3000;
 
 if (app.get('env') === 'development') { require('dotenv').config(); }
 
