@@ -1,22 +1,33 @@
 export const NavItems = [
   {
     label: "Home",
-    url: "#",
-    class: "nav-links"
+    url: "#home",
+    class: "nav-links smoothscroll"
   },
   {
     label: "About Us",
-    url: "#",
-    class: "nav-links"
+    url: "#about",
+    class: "nav-links smoothscroll"
   },
   {
     label: "Services",
-    url: "#",
-    class: "nav-links"
+    url: "#services",
+    class: "nav-links smoothscroll"
+  },
+  {
+    label: "Meet the Team",
+    url: "#teammembers",
+    class: "nav-links smoothscroll"
   },
   {
     label: "Contact Us",
-    url: "#",
-    class: "nav-links"
+    url: "#contact",
+    class: "nav-links smoothscroll"
+  },
+  {
+    label: "Payment Portal",
+    url: "https://sacmgmt.afts.com/",
+    class: "nav-links smoothscroll"
   }
+  
 ]

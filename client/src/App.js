@@ -13,7 +13,7 @@ function App() {
   return (
     <div>
     <Nav />
-      <Hero backgroundImage= "https://www.lai.org/sites/default/files/images/home-page/h-lai-sacramento.jpg">
+      <Hero backgroundImage= "https://i.imgur.com/1jPECAo.png">
         <h1>Sacramento Management Company</h1>
       </Hero>
       <Aboutus />
