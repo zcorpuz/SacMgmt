@@ -18,7 +18,8 @@ function Team() {
       console.log(isOpen)}}> Meet The Team</button>
       {isOpen ?
         <div className="modal-team">
-          <p> Modal is open </p>
+          <a className="smoothscroll" href="/#teammembers">Meet the team!</a>
+
         </div>
        : null}
     </div>
