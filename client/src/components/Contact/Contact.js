@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Map from "../Map/Map";
+import "./style.css";
 
 
 export class Contact extends Component {
