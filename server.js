@@ -7,7 +7,7 @@ const contactRouter = require('./routes/API');
 
 const app = express();
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3001;
 
 if (app.get('env') === 'development') { require('dotenv').config(); }
 
@@ -23,10 +23,10 @@ if (process.env.NODE_ENV === "production") {
 
 app.get('/', (req, res) => {res.send('Hello World!')});
 
+app.use('/api', contactRouter);
 db.on('error', console.error.bind(console, 'MongoDB connection error:'));
 
-// Add routes, both API and view
-app.use('/api', contactRouter);
+
 
 // Start the API server
 app.listen(PORT, function() {
