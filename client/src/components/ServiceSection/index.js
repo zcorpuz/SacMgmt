@@ -11,7 +11,7 @@ function ServiceSection(props) {
     const closeModalHandler = (value => {setShow(0)});
     
     return(
-        <div className="service-section">
+        <div id="services" className="service-section">
             <h1 className="serv-title">Services</h1>
             <div className="service-one">
                 <h2 className="serv-title">HOA Management</h2>
@@ -47,7 +47,6 @@ function ServiceSection(props) {
             <h2 className="serv-title" id="other-serv-title">Other Management Services</h2>
             <div className="other-services">
                 {props.serviceData.otherServiceBox.map(item => {
-                    console.log("other-service", item);
                     return(
                         <div key={item.key}>
                             <div className="other-service-card">

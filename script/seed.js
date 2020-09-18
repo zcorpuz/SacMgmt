@@ -1,11 +1,3 @@
-const mongoose = require("mongoose");
-const db = require("../models");
-
-mongoose.connect(
-    process.emitWarning.MONGODB_URI ||
-    "mongodb://localhost/contactList"
-);
-
 const contactSeed = [
     {
         name: "Zach Corpuz",
@@ -27,3 +19,15 @@ const contactSeed = [
         message: "Test123"
     }
 ]
+
+// models.Contact
+// .deleteOne({})
+// .then(() => models.Contact.collection.insertMany(contactSeed))
+// .then(data => {
+//     console.log(data.result.n + " records inserted!");
+//     process.exit(0);
+// })
+// .catch(err => {
+//     console.error(err);
+//     process.exit(1);
+// });

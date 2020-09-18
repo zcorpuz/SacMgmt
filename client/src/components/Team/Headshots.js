@@ -25,4 +25,3 @@ function Headshots () {
     );
 }
 export default Headshots;
-

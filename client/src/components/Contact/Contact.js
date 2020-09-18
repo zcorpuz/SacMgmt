@@ -1,10 +1,39 @@
 import React, { Component } from "react";
 import Map from "../Map/Map";
+import axios from 'axios'
+
 import "./style.css";
 
+class Contact extends Component {
+  constructor(props) {
+    super(props)
 
-export class Contact extends Component {
+		this.state = {
+			name: '',
+			email: '',
+			message: ''
+		}
+	}
+
+	changeHandler = e => {
+		this.setState({ [e.target.name]: e.target.value })
+	}
+
+	submitHandler = e => {
+		e.preventDefault()
+		axios
+    .post('http://localhost:3001/api/contact', this.state)
+    .then(response => {
+      console.log(response)
+    })
+    .catch(error => {
+      console.log(error)
+    })
+	}
+
   render() {
+    const { name, email, message } = this.state;
+
     return (
       <div>
         <div id="contact">
@@ -18,7 +47,8 @@ export class Contact extends Component {
                     will get back to you as soon as possible.
                   </p>
                 </div>
-                <form name="sentMessage" id="contactForm" noValidate>
+                <form onSubmit={this.submitHandler}
+                name="sentMessage" id="contactForm" noValidate>
                   <div className="row">
                     <div className="col-md-6">
                       <div className="form-group">
@@ -26,6 +56,9 @@ export class Contact extends Component {
                           type="text"
                           id="name"
                           className="form-control"
+                          name="name"
+                          value={name}
+                          onChange={this.changeHandler}
                           placeholder="Name"
                           required="required"
                         />
@@ -38,6 +71,9 @@ export class Contact extends Component {
                           type="email"
                           id="email"
                           className="form-control"
+                          name="email"
+                          value={email}
+                          onChange={this.changeHandler}
                           placeholder="Email"
                           required="required"
                         />
@@ -50,6 +86,9 @@ export class Contact extends Component {
                       name="message"
                       id="message"
                       className="form-control"
+                      name="message"
+                      value={message}
+                      onChange={this.changeHandler}
                       rows="4"
                       placeholder="Message"
                       required
