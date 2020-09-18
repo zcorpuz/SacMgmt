@@ -13,6 +13,8 @@ body {
     width: 400px;
     /* max-width: 800px; */
     margin: 4rem auto;
+    position: fixed;
+    top: 0;
 }
 
 .modal-header-box {
