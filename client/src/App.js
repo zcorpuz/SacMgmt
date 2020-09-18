@@ -5,7 +5,7 @@ import serviceData from "./serviceData";
 import Hero from "./components/Hero";
 import Headshots from './components/Team/Headshots';
 // import Team from './components/Team/Team';
-import { Contact } from './components/Contact/Contact';
+import Contact from './components/Contact/Contact';
 import Aboutus from './components/Aboutus/Aboutus';
 
 
