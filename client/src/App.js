@@ -13,9 +13,9 @@ function App() {
   return (
     <div>
     <Nav />
-      {/* <Hero backgroundImage= "https://www.lai.org/sites/default/files/images/home-page/h-lai-sacramento.jpg">
+      <Hero backgroundImage= "https://www.lai.org/sites/default/files/images/home-page/h-lai-sacramento.jpg">
         <h1>Sacramento Management Company</h1>
-      </Hero> */}
+      </Hero>
       <Aboutus />
       {/* <Team /> */}
       {/* <Modal /> */}
