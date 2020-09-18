@@ -2,8 +2,11 @@ import React, { Component } from "react";
 import Map from "../Map/Map";
 import "./style.css";
 
+const axios = require('axios');
+
 
 export class Contact extends Component {
+
   render() {
     return (
       <div>
@@ -57,7 +60,7 @@ export class Contact extends Component {
                     <p className="help-block text-danger"></p>
                   </div>
                   <div id="success"></div>
-                  <button type="submit" className="btn btn-custom btn-lg">
+                  <button type="submit" onSubmit={handleFormSubmit} method="POST" className="btn btn-custom btn-lg">
                     Send Message
                   </button>
                 </form>
