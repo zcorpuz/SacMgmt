@@ -5,6 +5,8 @@ const mongoose = require("mongoose");
 const app = express();
 const cors = require('cors');
 
+const Contact = require("./models/index");
+
 const routes = require('./routes/API');
 
 const PORT = process.env.PORT || 3001;
@@ -37,7 +39,7 @@ mongoose
     })
   .catch(e => {
     console.error('Connection error', e.message)
-  })
+})
 
 // Start the API server
 app.listen(PORT, function() {
