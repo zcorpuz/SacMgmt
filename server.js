@@ -26,8 +26,6 @@ app.get('/', (req, res) => {res.send('Hello World!')});
 app.use('/api', contactRouter);
 db.on('error', console.error.bind(console, 'MongoDB connection error:'));
 
-
-
 // Start the API server
 app.listen(PORT, function() {
   console.log(`🌎  ==> API Server now listening on PORT ${PORT}!`);

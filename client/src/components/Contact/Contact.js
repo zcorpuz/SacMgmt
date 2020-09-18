@@ -4,12 +4,9 @@ import axios from 'axios'
 
 import "./style.css";
 
-// const axios = require('axios');
-
-
 class Contact extends Component {
   constructor(props) {
-		super(props)
+    super(props)
 
 		this.state = {
 			name: '',
@@ -18,36 +15,24 @@ class Contact extends Component {
 		}
 	}
 
-
 	changeHandler = e => {
 		this.setState({ [e.target.name]: e.target.value })
 	}
 
 	submitHandler = e => {
 		e.preventDefault()
-		console.log(this.state)
 		axios
-			.post('http://localhost:3001/api/contact', this.state)
-			.then(response => {
-				console.log(response)
-			})
-			.catch(error => {
-				console.log(error)
-      })
-      
-      console.log(axios.post('http://localhost:3001/api/contact', this.state));
+    .post('http://localhost:3001/api/contact', this.state)
+    .then(response => {
+      console.log(response)
+    })
+    .catch(error => {
+      console.log(error)
+    })
 	}
-
-
-
-
 
   render() {
     const { name, email, message } = this.state;
-    console.log(name);
-    console.log(email);
-    console.log(message);
-
 
     return (
       <div>
@@ -72,8 +57,8 @@ class Contact extends Component {
                           id="name"
                           className="form-control"
                           name="name"
-							value={name}
-							onChange={this.changeHandler}
+                          value={name}
+                          onChange={this.changeHandler}
                           placeholder="Name"
                           required="required"
                         />
@@ -87,8 +72,8 @@ class Contact extends Component {
                           id="email"
                           className="form-control"
                           name="email"
-							value={email}
-							onChange={this.changeHandler}
+                          value={email}
+                          onChange={this.changeHandler}
                           placeholder="Email"
                           required="required"
                         />
@@ -102,8 +87,8 @@ class Contact extends Component {
                       id="message"
                       className="form-control"
                       name="message"
-							value={message}
-							onChange={this.changeHandler}
+                      value={message}
+                      onChange={this.changeHandler}
                       rows="4"
                       placeholder="Message"
                       required

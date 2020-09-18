@@ -18,7 +18,6 @@ function App() {
       </Hero>
       <Aboutus />
       {/* <Team /> */}
-      {/* <Modal /> */}
       <ServiceSection serviceData={serviceData}/>
       <Headshots />
       <Contact />
