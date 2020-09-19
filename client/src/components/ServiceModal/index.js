@@ -16,7 +16,7 @@ function Modal({ show, close, item}) {
                 {/* <div className="inner"> */}
 
                     <div className="modal-header-box">
-                        <p>{item.name}</p>
+                        <p id="titleModal">{item.name}</p>
                         <span onClick={close} className="close-modal-btn">x</span>
 
                     </div>

@@ -30,7 +30,8 @@ h2 h3 {
 }
 
 .bodyP {
-    padding: 25px;
-    font-family: 'Volkhov', serif;
+    padding: 24px;
+    font-family: 'Assistant', sans-serif;
     text-align: justify;
+    font-size: 18px;
 }

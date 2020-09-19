@@ -18,10 +18,10 @@ function ServiceSection(props) {
                 <h2 className="serv-title">HOA Management</h2>
                 <div className="hoa-manage">
                     <div className="blurb-one">
-                        <p>{props.serviceData.blurbOne}</p>
+                        <p className="serviceDesc">{props.serviceData.blurbOne}</p>
                     </div>
                     <div className="blurb-two">
-                        <p>{props.serviceData.blurbTwo}</p>
+                        <p className="serviceDesc">{props.serviceData.blurbTwo}</p>
                         <div>
                             <ul className="hoa-bullet-list">
                                 {props.serviceData.hoaBullets.map(hoaItem => <li key={hoaItem.key}>{hoaItem.oneItem}</li>)}
