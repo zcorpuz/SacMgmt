@@ -54,7 +54,7 @@ const Teammember = () => {
       <Card style={{ width: "18rem" }} key={index}   className="box">
         <Card.Img variant="top" className= "img-fluid" src={card.image} />
         <Card.Body>
-          <Card.Title>{card.role}</Card.Title>
+          <Card.Title>{card.name}</Card.Title>
           <Card.Title>{card.role}</Card.Title>
           <Card.Text>{card.message}</Card.Text>
         </Card.Body>
