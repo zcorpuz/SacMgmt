@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "./style.css";
 
-import Team from "../Team/Team";
+// import Team from "../Team/Team";
 
 class Aboutus extends Component {
     render() {
