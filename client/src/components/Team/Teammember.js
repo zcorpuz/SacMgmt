@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import Card from "react-bootstrap/Card";
+import CardDeck from 'react-bootstrap/CardDeck';
+import Col from 'react-bootstrap/Col'
 // import Laura from "./Laura.jpg";
 // import Cesar from "./cesar.jpg";
 // import DeAnn from "./DeeAnn.jpg";
@@ -51,14 +53,20 @@ const Teammember = () => {
 
   const renderCard = (card, index) => {
     return (
-      <Card style={{ width: "18rem" }} key={index}   className="box">
-        <Card.Img variant="top" className= "img-fluid" src={card.image} />
-        <Card.Body>
-          <Card.Title>{card.name}</Card.Title>
-          <Card.Title>{card.role}</Card.Title>
-          <Card.Text>{card.message}</Card.Text>
-        </Card.Body>
-      </Card>
+      <div className="row">
+        <CardDeck className="cardDiv" style={{display: 'flex', flexDirection: 'row', width:"20%"}}>
+          <Col md="auto">
+            <Card key={index} style={{flex: 1}}>
+              {/* <Card.Img variant="top" className= "img-fluid" src={card.image} /> */}
+              <Card.Body className="box">
+                <Card.Title>{card.name}</Card.Title>
+                <Card.Title>{card.role}</Card.Title>
+                <Card.Text>{card.message}</Card.Text>
+              </Card.Body>
+            </Card>
+          </Col>
+        </CardDeck>
+      </div>
     )
   }
 

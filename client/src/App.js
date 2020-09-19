@@ -19,7 +19,7 @@ function App() {
       <Aboutus />
       {/* <Team /> */}
       <ServiceSection serviceData={serviceData}/>
-      <Teammember />
+      {/* <Teammember /> */}
       <Contact />
     </div>
   );

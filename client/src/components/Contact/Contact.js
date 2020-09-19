@@ -108,7 +108,7 @@ class Contact extends Component {
                   <h3>Contact Info</h3>
                   <p>
                     <span>
-                      <i className="fas fa-map-marker-alt"></i>  Address:
+                      <i className="fas fa-map-marker-alt"></i>    Address:
                     </span>
                     2701 Cottage Way, Suite 9 <br />
                     Sacramento, CA 95825
@@ -117,13 +117,13 @@ class Contact extends Component {
                 <div className="contact-item">
                   <p>
                     <span>
-                      <i className="fa fa-phone"></i>Phone:
+                      <i className="fa fa-phone"></i> Phone:
                     </span>
                     (916) 974-0147
                   </p>
                   <p>
                     <span>
-                      <i className="fa fa-fax"></i>Fax:
+                      <i className="fa fa-fax"></i> Fax:
                     </span>
                     (916) 974-0174
                   </p>
@@ -131,7 +131,7 @@ class Contact extends Component {
                 <div className="contact-item">
                   <p>
                     <span>
-                      <i className="fa fa-envelope"></i>Email:
+                      <i className="fa fa-envelope"></i> Email:
                     </span>
                     info@sacmgmt.net
                   </p>

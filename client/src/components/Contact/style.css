@@ -1,5 +1,5 @@
-/* Contact Section */
-/* body, html {
+Contact Section */
+body, html {
 	font-family: 'Open Sans', sans-serif;
 	text-rendering: optimizeLegibility !important;
 	-webkit-font-smoothing: antialiased !important;
@@ -17,12 +17,12 @@ h2 {
 	font-weight: 800;
 	font-size: 36px;
 	color: #333;
-} */
-/* h3 {
+}
+h3 {
 	font-size: 20px;
 	font-weight: 600;
 	color: #333;
-} */
+}
 h4 {
 	font-size: 18px;
 	color: #333;
@@ -32,7 +32,7 @@ h5 {
 	text-transform: uppercase;
 	font-weight: 700;
 	line-height: 20px;
-/* }
+}
 p {
 	font-size: 15px;
 }
@@ -52,9 +52,9 @@ ul, ol {
 	list-style: none;
 }
 ul, ol {
-	padding: 0; */
-	/* webkit-padding: 0;
-	moz-padding: 0; */
+	padding: 0;
+	webkit-padding: 0;
+	moz-padding: 0;
 }
 hr {
 	height: 2px;
@@ -93,10 +93,12 @@ hr {
 }
 #contact h3 {
 	color: #fff;
-	margin-top: 80px;
+	margin-top: 0px;
 	margin-bottom: 25px;
+	padding-top: 0px;
 	padding-bottom: 20px;
 	font-weight: 400;
+	text-align: center;
 }
 #contact form {
 	padding-top: 20px;
@@ -158,13 +160,14 @@ color: #acada8;
 }
 #contact .contact-item {
 	margin: 20px 0;
+	text-align: center;
 }
 #contact .contact-item span {
 	color: rgba(255,255,255,1);
 	margin-bottom: 10px;
 	display: block;
 }
-#contact .contact-item i.fa {
+#contact .contact-item i.fab {
 	margin-right: 10px;
 }
 #contact .social {
@@ -172,22 +175,23 @@ color: #acada8;
 	padding-top: 50px;
 	margin-top: 50px;
 	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
 }
 #contact .social ul li {
 	display: inline-block;
 	margin: 0 20px;
 }
-#contact .social i.fa {
-	font-size: 22px;
-	width: 48px;
-	height: 48px;
+#contact .social i.fab {
+	width: 40px;
+	height: 40px;
 	padding: 12px 0;
-	border: 2px solid #fff;
-	color: #fff;
+	border: 2px solid white;
+	color: white;
 	border-radius: 50%;
 	transition: all 0.3s;
 }
-#contact .social i.fa:hover {
+#contact .social i.fab:hover {
 	color: #608dfd;
 	background: #fff;
 }
