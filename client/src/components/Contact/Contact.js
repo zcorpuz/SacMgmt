@@ -38,104 +38,110 @@ class Contact extends Component {
       <div>
         <div id="contact">
           <div className="container">
-            <div className="col-md-8">
-              <div className="row">
-                <div className="section-title">
-                  <h2>Get In Touch</h2>
+            <div className="row">
+              <div className="col-md-4">
+                {/* <div className="row"> */}
+                  <div className="section-title">
+                    <h2>Get In Touch</h2>
+                    <p>
+                      Please fill out the form below to send us an email and we
+                      will get back to you as soon as possible.
+                    </p>
+                  </div>
+                  <form onSubmit={this.submitHandler}
+                  name="sentMessage" id="contactForm" noValidate>
+                    <div className="row">
+                      <div className="col-md-6">
+                        <div className="form-group">
+                          <input
+                            type="text"
+                            id="name"
+                            className="form-control"
+                            name="name"
+                            value={name}
+                            onChange={this.changeHandler}
+                            placeholder="Name"
+                            required="required"
+                          />
+                          <p className="help-block text-danger"></p>
+                        </div>
+                      </div>
+                      <div className="col-md-6">
+                        <div className="form-group">
+                          <input
+                            type="email"
+                            id="email"
+                            className="form-control"
+                            name="email"
+                            value={email}
+                            onChange={this.changeHandler}
+                            placeholder="Email"
+                            required="required"
+                          />
+                          <p className="help-block text-danger"></p>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="form-group">
+                      <textarea
+                        name="message"
+                        id="message"
+                        className="form-control"
+                        name="message"
+                        value={message}
+                        onChange={this.changeHandler}
+                        rows="4"
+                        placeholder="Message"
+                        required
+                      ></textarea>
+                      <p className="help-block text-danger"></p>
+                    </div>
+                    <div id="success"></div>
+                    <button type="submit" className="btn btn-custom btn-lg">
+                      Send Message
+                    </button>
+                  </form>
+                {/* </div> */}
+              </div>
+              <div className="col-md-4 contact-info">
+                <div className="contact-item">
+                  <h3>Contact Info</h3>
                   <p>
-                    Please fill out the form below to send us an email and we
-                    will get back to you as soon as possible.
+                    <span>
+                      <i className="fas fa-map-marker-alt"></i>  Address:
+                    </span>
+                    2701 Cottage Way, Suite 9 <br />
+                    Sacramento, CA 95825
                   </p>
                 </div>
-                <form onSubmit={this.submitHandler}
-                name="sentMessage" id="contactForm" noValidate>
-                  <div className="row">
-                    <div className="col-md-6">
-                      <div className="form-group">
-                        <input
-                          type="text"
-                          id="name"
-                          className="form-control"
-                          name="name"
-                          value={name}
-                          onChange={this.changeHandler}
-                          placeholder="Name"
-                          required="required"
-                        />
-                        <p className="help-block text-danger"></p>
-                      </div>
-                    </div>
-                    <div className="col-md-6">
-                      <div className="form-group">
-                        <input
-                          type="email"
-                          id="email"
-                          className="form-control"
-                          name="email"
-                          value={email}
-                          onChange={this.changeHandler}
-                          placeholder="Email"
-                          required="required"
-                        />
-                        <p className="help-block text-danger"></p>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="form-group">
-                    <textarea
-                      name="message"
-                      id="message"
-                      className="form-control"
-                      name="message"
-                      value={message}
-                      onChange={this.changeHandler}
-                      rows="4"
-                      placeholder="Message"
-                      required
-                    ></textarea>
-                    <p className="help-block text-danger"></p>
-                  </div>
-                  <div id="success"></div>
-                  <button type="submit" className="btn btn-custom btn-lg">
-                    Send Message
-                  </button>
-                </form>
+                <div className="contact-item">
+                  <p>
+                    <span>
+                      <i className="fa fa-phone"></i>Phone:
+                    </span>
+                    (916) 974-0147
+                  </p>
+                  <p>
+                    <span>
+                      <i className="fa fa-fax"></i>Fax:
+                    </span>
+                    (916) 974-0174
+                  </p>
+                </div>
+                <div className="contact-item">
+                  <p>
+                    <span>
+                      <i className="fa fa-envelope"></i>Email:
+                    </span>
+                    info@sacmgmt.net
+                  </p>
+                </div>
+              </div>
+              <div className="col-md-4 contact-info">
+                <Map />
               </div>
             </div>
-            <div className="col-md-3 col-md-offset-1 contact-info">
-              <div className="contact-item">
-                <h3>Contact Info</h3>
-                <p>
-                  <span>
-                    <i className="fas fa-map-marker-alt"></i>  Address:
-                  </span>
-                  2701 Cottage Way, Suite 9 Sacramento, CA 95825
-                </p>
-              </div>
-              <div className="contact-item">
-                <p>
-                  <span>
-                    <i className="fa fa-phone"></i>Phone:
-                  </span>
-                  (916) 974-0147
-                </p>
-                <p>
-                  <span>
-                    <i className="fa fa-fax"></i>Fax:
-                  </span>
-                  (916) 974-0174
-                </p>
-              </div>
-              <div className="contact-item">
-                <p>
-                  <span>
-                    <i className="fa fa-envelope"></i>Email:
-                  </span>
-                  info@sacmgmt.net
-                </p>
-              </div>
-            </div>
-            <Map />
+            {/* Social Media Links */}
             <div className="col-md-12">
               <div className="row text-center">
                 <div className="social">
