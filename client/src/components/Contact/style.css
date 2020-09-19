@@ -1,5 +1,5 @@
 /* Contact Section */
-body, html {
+/* body, html {
 	font-family: 'Open Sans', sans-serif;
 	text-rendering: optimizeLegibility !important;
 	-webkit-font-smoothing: antialiased !important;
@@ -17,12 +17,12 @@ h2 {
 	font-weight: 800;
 	font-size: 36px;
 	color: #333;
-}
-h3 {
+} */
+/* h3 {
 	font-size: 20px;
 	font-weight: 600;
 	color: #333;
-}
+} */
 h4 {
 	font-size: 18px;
 	color: #333;
@@ -32,7 +32,7 @@ h5 {
 	text-transform: uppercase;
 	font-weight: 700;
 	line-height: 20px;
-}
+/* }
 p {
 	font-size: 15px;
 }
@@ -52,7 +52,7 @@ ul, ol {
 	list-style: none;
 }
 ul, ol {
-	padding: 0;
+	padding: 0; */
 	/* webkit-padding: 0;
 	moz-padding: 0; */
 }

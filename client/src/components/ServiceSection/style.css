@@ -1,15 +1,24 @@
 .service-section {
-    background-color: #acada8;
+    background-color: #f9f9f9;
+    max-width: 75%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#main-service-title {
+    text-transform: uppercase;
 }
 
 .service-one {
-    background-color: #f9f9f9;
+    /* background-color: #f9f9f9; */
     margin-left: 30px;
     margin-right: 30px;
 }
 
 .serv-title {
     text-align: center;
+    font-family: 'Spartan', sans-serif;
 }
 
 .hoa-manage {
@@ -24,7 +33,7 @@
 }
 
 .blurb-one {
-    max-width: 50%;
+    max-width: 40%;
 }
 
 .hoa-bullet-list {
@@ -45,6 +54,7 @@
     width: 200px;
     height: 100px;
     padding: 20px;
+    border-radius: 10px;
 }
 
 .other-service-card {
@@ -56,8 +66,14 @@
     margin-bottom: 10px;
     margin-bottom: 20px;
     padding: 20px;
+    border-radius: 10px;
+}
+
+.service-pop {
+    position: relative;
 }
 
 #other-serv-title {
     margin-bottom: 20px;
+    margin-top: 40px;
 }
