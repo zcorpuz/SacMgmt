@@ -4,7 +4,8 @@
   display: flex;
   justify-content: right;
   align-items: center;
-  font-size: 1.2rem;
+  font-size: 2rem;
+  font-family: 'Spartan', sans-serif;
 }
 
 .navbar-logo {
@@ -24,19 +25,21 @@
 
 .nav-menu {
   display: grid;
-  grid-template-columns: repeat(5, auto);
+  grid-template-columns: repeat(6, auto);
   grid-gap: 10px;
   list-style: none;
-  text-align: center;
+  text-align: right;
   width: 70vw;
   justify-content: end;
-  margin-right: 2rem;
+  margin-right: 5px;
 }
 
 .nav-links {
   color: white;
   text-decoration: none;
   padding: 0.5rem 1rem;
+  text-align:right;
+  display: block;
 }
 
 .nav-links:hover {

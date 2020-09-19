@@ -6,14 +6,14 @@ import Card from 'react-bootstrap/Card';
 const Teammember = () => {
     return (
         <Card style={{ width: '18rem' }}>
-        <Card.Img variant="top" src="holder.js/100px180" />
-        <Card.Body>
-          <Card.Title>Laura Vaca Davila</Card.Title>
-          <Card.Text>
-          Laura is the Principal and Chief Executive Officer of Sacramento Management Co., Inc. She began her career in Community Management in 2016 and earned her Certified Community Association Manager (CCAM) designation through the California Association of Community Managers (CACM) in April of 2017. Laura has a passion for helping others succeed and uses that same driving force to help her clients and communities thrive. On a typical Sunday, you can find Laura reading a book or binge-watching Netflix with her husband and two daughters.
-          </Card.Text>
-        </Card.Body>
-      </Card>,
+          <Card.Img variant="top" src="holder.js/100px180" />
+            <Card.Body>
+              <Card.Title>Laura Vaca Davila</Card.Title>
+              <Card.Text>
+                Laura is the Principal and Chief Executive Officer of Sacramento Management Co., Inc. She began her career in Community Management in 2016 and earned her Certified Community Association Manager (CCAM) designation through the California Association of Community Managers (CACM) in April of 2017. Laura has a passion for helping others succeed and uses that same driving force to help her clients and communities thrive. On a typical Sunday, you can find Laura reading a book or binge-watching Netflix with her husband and two daughters.
+              </Card.Text>
+            </Card.Body>
+        </Card>,
 
         <Card style={{ width: '18rem' }}>
         <Card.Img variant="top" src="holder.js/100px180" />
