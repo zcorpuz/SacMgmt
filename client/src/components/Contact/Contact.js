@@ -38,7 +38,7 @@ class Contact extends Component {
       <div>
         <div id="contact">
           <div className="container">
-            <div className="col-md-6">
+            <div className="col-md-8">
               <div className="row">
                 <div className="section-title">
                   <h2>Get In Touch</h2>
@@ -102,7 +102,6 @@ class Contact extends Component {
                 </form>
               </div>
             </div>
-            <Map />
             <div className="col-md-3 col-md-offset-1 contact-info">
               <div className="contact-item">
                 <h3>Contact Info</h3>
@@ -136,8 +135,9 @@ class Contact extends Component {
                 </p>
               </div>
             </div>
+            <Map />
             <div className="col-md-12">
-              <div className="row">
+              <div className="row text-center">
                 <div className="social">
                   <ul>
                     <li>
