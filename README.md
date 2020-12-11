@@ -39,6 +39,7 @@
     <li><a href="#contributing">Roadmap/To-do</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Team</a></li>
+    <li><a href="#contact">Acknowledgements</a></li>
   </ol>
 </details>
 
