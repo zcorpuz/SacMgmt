@@ -1,38 +1,41 @@
-import React, {Component} from "react";
+import React, { useState } from 'react';
 import {NavItems} from "./NavItems";
-import "./style.css";
+import { BrowserRouter, Route } from 'react-router-dom';
+import './style.css';
 
-class Nav extends Component {
-  state = { clicked: false}
+function Navbar() {
+  const [click, setClick] = useState(false);
 
-  handleClick = () => {
-    this.setState({ clicked: !this.state.clicked})
-  }
+  const handleClick = () => setClick(!click);
+  const closeMobileMenu = () => setClick(false);
 
-  render() {
-    return (
-      <nav className="NavbarItems">
+  return (
+    <BrowserRouter>
+      <nav className='NavbarItems'>
         <img
           className="navbar-logo"
           alt="Sacramento Management Company"
           src= {require("./Artboard-1.png")}
         />
-        <div className= "menu-icon" onClick={this.handleClick}>
-        <i className={this.state.clicked ? 'fas fa-times' : 'fas fa-bars'}></i>
+        <div className='menu-icon' onClick={handleClick}>
+          <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
         </div>
-        <ul className= {this.state.clicked ? 'nav-menu active' : 'nav-menu'}>
-          {NavItems.map((item, index) => {
+        <ul className={click ? 'nav-menu active' : 'nav-menu'}>
+          
+        {NavItems.map((item, index) => {
             return(
-              <li key={index}>
-                <a className={item.class} href={item.url}>{item.label}</a>
+              <li key={index} className='nav-item'>
+
+                <Route to='/' className={item.class} onClick={closeMobileMenu} href={item.url}>
+                {item.label}
+                </Route>
               </li>
             )
           })}
         </ul>
       </nav>
-    );
-  }
-  
+    </BrowserRouter>
+  );
 }
 
-export default Nav;
+export default Navbar;

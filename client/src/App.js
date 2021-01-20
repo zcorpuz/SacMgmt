@@ -8,18 +8,13 @@ import Contact from './components/Contact';
 import Aboutus from './components/AboutUs';
 // import Teammember from './components/Team/Teammember';
 
-
 function App() {
   return (
     <div>
-    <Nav />
-      <Hero backgroundImage="https://i.imgur.com/1jPECAo.png">
-        <h1>Sacramento Management Company</h1>
-      </Hero>
+      <Nav />
+      <Hero />
       <Aboutus />
-      {/* <Team /> */}
       <ServiceSection serviceData={serviceData}/>
-      {/* <Teammember /> */}
       <Contact />
     </div>
   );
