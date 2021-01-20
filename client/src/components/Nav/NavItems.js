@@ -29,5 +29,4 @@ export const NavItems = [
     url: "https://sacmgmt.afts.com/",
     class: "nav-links smoothscroll"
   }
-  
 ]

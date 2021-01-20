@@ -1,38 +1,38 @@
 import React, { Component } from "react";
-import Map from "../Map/Map";
-import axios from 'axios'
+import Map from "../Map";
+// import axios from 'axios'
 
 import "./style.css";
 
 class Contact extends Component {
-  constructor(props) {
-    super(props)
+  // constructor(props) {
+  //   super(props)
 
-		this.state = {
-			name: '',
-			email: '',
-			message: ''
-		}
-	}
+	// 	this.state = {
+	// 		name: '',
+	// 		email: '',
+	// 		message: ''
+	// 	}
+	// }
 
-	changeHandler = e => {
-		this.setState({ [e.target.name]: e.target.value })
-	}
+	// changeHandler = e => {
+	// 	this.setState({ [e.target.name]: e.target.value })
+	// }
 
-	submitHandler = e => {
-		e.preventDefault()
-		axios
-    .post('http://localhost:3001/api/contact', this.state)
-    .then(response => {
-      console.log(response)
-    })
-    .catch(error => {
-      console.log(error)
-    })
-	}
+	// submitHandler = e => {
+	// 	e.preventDefault()
+	// 	axios
+  //   .post('http://localhost:3001/api/contact', this.state)
+  //   .then(response => {
+  //     console.log(response)
+  //   })
+  //   .catch(error => {
+  //     console.log(error)
+  //   })
+	// }
 
   render() {
-    const { name, email, message } = this.state;
+    // const { name, email, message } = this.state;
 
     return (
       <div>
@@ -41,14 +41,14 @@ class Contact extends Component {
             <div className="row">
               <div className="col-md-4">
                 {/* <div className="row"> */}
-                  <div className="section-title">
+                  {/* <div className="section-title">
                     <h2>Get In Touch</h2>
                     <p>
                       Please fill out the form below to send us an email and we
                       will get back to you as soon as possible.
                     </p>
-                  </div>
-                  <form onSubmit={this.submitHandler}
+                  </div> */}
+                  {/* <form onSubmit={this.submitHandler}
                   name="sentMessage" id="contactForm" noValidate>
                     <div className="row">
                       <div className="col-md-6">
@@ -100,7 +100,7 @@ class Contact extends Component {
                     <button type="submit" className="btn btn-custom btn-lg">
                       Send Message
                     </button>
-                  </form>
+                  </form> */}
                 {/* </div> */}
               </div>
               <div className="col-md-4 contact-info">
