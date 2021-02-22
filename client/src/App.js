@@ -5,7 +5,7 @@ import serviceData from "./serviceData";
 import Hero from "./components/Hero";
 // import Team from './components/Team/Team';
 import Contact from './components/Contact';
-import Aboutus from './components/AboutUs';
+import Aboutus from "./components/Aboutus/index";
 // import Teammember from './components/Team/Teammember';
 
 function App() {
