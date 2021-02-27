@@ -8,7 +8,7 @@ function Team(props) {
       <div>
         {props.teamMember.map(employee => <div key={employee.key}>
           <h3>{employee.name}</h3>
-          <img src={require(`../imgs/${props.name}.png`)} />
+          <img src={require(`../../img/${employee.imgName}.jpg`)} />
           <p>{employee.role}</p>
           <p>{employee.message}</p>
           </div>
