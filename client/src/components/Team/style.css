@@ -1,39 +1,28 @@
-/* .box{
-    height: 300px;
-    width: 300px;
-    background:#acada8;
-    border-radius: 30px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-} */
-
-/* .cardDiv {
-  display: grid;
-  grid-template-columns: repeat(3, 0px);
-} */
-
-.cardDiv {
-  display: flex;
-  flex-flow: row wrap;
-  padding: 0;
-  margin: 0;
-  justify-content: space-around;
-}
-
-.box{
-  width: 200px;
-  height: 150px;
-  margin-top: 10px;
-  line-height: 150px;
+.meet-the-team {
+  max-width: 90%;
   text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: aqua;
+  margin-bottom: 20px;
 }
 
-/* .modal {
-	width: 400px;
-	border: 1px solid grey;
-	margin: 0 auto;
-	margin-top: 10px;
-	background: grey;
-  } */
+.team-title {
+  font-family: 'Spartan', sans-serif;
+}
+
+.employee-info {
+  margin-bottom: 20px;
+}
+
+.employee-card {
+  background-color: burlywood;
+  /* max-width: 20%; */
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.employee-img {
+  max-width: 200px;
+}

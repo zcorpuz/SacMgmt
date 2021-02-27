@@ -1,20 +1,33 @@
 import React from "react";
+import { Container, Col, Row } from "react-bootstrap";
 import "./style.css";
 
 function Team(props) {
   return(
-    <div>
-      <h1>Meet the Team</h1>
-      <div>
-        {props.teamMember.map(employee => <div key={employee.key}>
-          <h3>{employee.name}</h3>
-          <img src={require(`../../img/${employee.imgName}.jpg`)} />
-          <p>{employee.role}</p>
-          <p>{employee.message}</p>
-          </div>
-          )}
-      </div>
-    </div>
+    <Container className="meet-the-team">
+      <Row>
+        <h1 className="col-md-12 team-title">Meet the Team</h1>
+      </Row>
+      <Row className="row employee-info">
+        {props.teamMember.map(employee => 
+          <Col 
+            key={employee.key}
+            className="employee-card"
+            md={5}
+            s={12}
+          >
+            <h3>{employee.name}</h3>
+            <img 
+              src={require(`../../img/${employee.imgName}.jpg`)}
+              className="employee-img"
+            />
+            <p>{employee.role}</p>
+            <p>{employee.message}</p>
+          </Col>
+        )}
+      </Row>
+    </Container>
   )
 }
+
 export default Team;
