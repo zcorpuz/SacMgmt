@@ -18,7 +18,8 @@ function Team(props) {
           >
             <h3>{employee.name}</h3>
             <img 
-              src={require(`../../img/${employee.imgName}.jpg`)}
+              src={require(`../../img/${employee.imgName}.png`)}
+              alt={employee.imgAlt}
               className="employee-img"
             />
             <p>{employee.role}</p>
