@@ -21,12 +21,13 @@
 .nav-menu {
   display: grid;
   grid-template-columns: repeat(6, auto);
-  grid-gap: 10px;
+  grid-gap: 30px;
   list-style: none;
   text-align: center;
-  width: 70vw;
+  width: 80vw;
   justify-content: end;
   margin-right: 2rem;
+  color: white;
 }
 
 .nav-item {
@@ -81,7 +82,7 @@
     left: 0;
     opacity: 1;
     transition: all 0.5s ease;
-    z-index: 1;
+    z-index: 1000;
   }
 
   .nav-links {
@@ -94,6 +95,7 @@
   .nav-links:hover {
     background-color: #d4c893;
     border-radius: 0;
+    cursor: pointer;
   }
 
   .navbar-logo {
@@ -108,8 +110,8 @@
     position: absolute;
     top: 0;
     right: 0;
-    transform: translate(-100%, 60%);
-    font-size: 1.8rem;
+    transform: translate(-100%, 90%);
+    /* font-size: 1.8rem; */
     cursor: pointer;
   }
 

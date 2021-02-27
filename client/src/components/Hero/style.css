@@ -5,18 +5,6 @@
   position: relative;
 }
 
-.hero::after {
-  content: "";
-  display: block;
-  opacity: .6;
-  position: relative;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: #40423d;
-}
-
 .hero * {
   position: relative;
   z-index: 2;
@@ -24,7 +12,7 @@
 
 .hero h1 {
   color: #f9f9f9;
-  font-size: 100px;
+  font-size: 10rem;
   padding-top: 140px;
   margin-top: 0;
   position: relative;
