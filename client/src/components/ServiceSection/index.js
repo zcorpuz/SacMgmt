@@ -11,7 +11,6 @@ function ServiceSection(props) {
     const closeModalHandler = (value => {setShow(0)});
     
     return(
-
         <div id="services" className="service-section">
             <h1 className="serv-title" id="main-service-title">Services</h1>
             <div className="service-one">

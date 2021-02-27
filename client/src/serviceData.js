@@ -8,7 +8,6 @@ let serviceData = {
         },
         {
             key: "hoa-2",
-
             oneItem: "Homeowner packages"
         },
         {
