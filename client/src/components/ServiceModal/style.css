@@ -5,7 +5,7 @@
 }
 
 .modal-wrapper {
-    max-width: 500px;
+    max-width: 550px;
     background-color: white;
     position: fixed;
     top: 75px;
@@ -15,6 +15,7 @@
     display: flex;
     flex-direction: column;
     font-family: 'Assistant', sans-serif;
+    z-index: 1000;
 }
 
 .modal-header-box {
@@ -37,7 +38,7 @@
 
 .modal-content-box {
     padding: 1.5rem 1rem;
-    background-color: white;
+    background-color: rgb(190, 185, 185);
     font-size: 18px;
 }
 
@@ -56,17 +57,6 @@
     color: black;
     padding: 1rem;
     margin: 1rem 0 2rem 0;
-}
-
-.modal-footer button {
-    display: block;
-    font-size: 1rem;
-    margin-left: auto;
-    padding: 0.5rem 1.8rem;
-    color: wheat;
-    border: none;
-    outline: none;
-    cursor: pointer;
 }
 
 .service-bullet {
