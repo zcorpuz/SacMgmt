@@ -23,9 +23,26 @@
   margin-right: auto;
 }
 
+.employee-name {
+  font-size: 35px;
+}
+
 .employee-img {
+  margin-top: 20px;
   max-width: 200px;
   border-radius: 100px;
+}
+
+.employee-role {
+  margin-top: 20px;
+  font-size: 20px;
+  letter-spacing: 1px;
+  font-family: 'Spartan', sans-serif;
+}
+
+.employee-message {
+  font-family: 'Spartan', sans-serif;
+  font-weight: 300;
 }
 
 @media screen and (max-width: 960px) {

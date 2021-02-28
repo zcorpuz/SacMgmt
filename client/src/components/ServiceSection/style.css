@@ -1,6 +1,6 @@
 .service-section {
     background-color: #f9f9f9;
-    max-width: 75%;
+    max-width: 80%;
     display: block;
     margin-top: 70px;
     margin-left: auto;
@@ -95,7 +95,7 @@
 
 @media screen and (max-width: 960px) {
     .hoa-service-card, .other-service-card {
-        max-width: 75%;
+        max-width: 65%;
         display: block;
         margin-left: auto;
         margin-right: auto;

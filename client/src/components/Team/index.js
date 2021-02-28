@@ -22,8 +22,8 @@ function Team(props) {
               alt={employee.imgAlt}
               className="employee-img"
             />
-            <p>{employee.role}</p>
-            <p>{employee.message}</p>
+            <p className="employee-role">{employee.role}</p>
+            <p className="employee-message">{employee.message}</p>
           </Col>
         )}
       </Row>
