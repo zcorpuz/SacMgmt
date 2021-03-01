@@ -6,7 +6,7 @@ import Hero from './components/Hero';
 import Team from './components/Team';
 import teamMember from './teamMember';
 import Contact from './components/Contact';
-import Aboutus from './components/AboutUs';
+import Aboutus from './components/Aboutus/index';
 
 function App() {
   return (
