@@ -4,7 +4,7 @@ import HeaderPic from "./sacra-header.png"
 
 function Hero(props) {
   return (
-    <div className="hero text-center" style={{ backgroundImage: `url(${HeaderPic})` }}>
+    <div className="hero text-center" alt= "Sacramento skyline businesses" style={{ backgroundImage: `url(${HeaderPic})` }}>
       <h1>Sacramento Management Company</h1>
     </div>
   );
