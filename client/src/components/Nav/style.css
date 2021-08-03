@@ -42,7 +42,12 @@
   padding: 0.5rem 1rem;
 }
 
-.nav-links:hover {
+#pay-link {
+  color: white;
+}
+
+.nav-item:hover {
+  cursor: pointer;
   background-color: #d4c893;
   border-radius: 4px;
   transition: all 0.2s ease-out;
@@ -90,12 +95,6 @@
     padding: 2rem;
     width: 100%;
     display: table;
-  }
-
-  .nav-links:hover {
-    background-color: #d4c893;
-    border-radius: 0;
-    cursor: pointer;
   }
 
   .navbar-logo {

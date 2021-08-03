@@ -37,6 +37,16 @@ function Navbar() {
             </Link>
           )
         })}
+        <a 
+          href="https://sacmgmt.afts.com/"
+          offset={-70}
+          duration={500}
+          onClick={closeMobileMenu}
+          className='nav-item'
+          id="pay-link"
+        >
+          Payment Portal
+        </a>
       </ul>
     </nav>
   );

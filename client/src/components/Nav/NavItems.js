@@ -23,10 +23,5 @@ export const NavItems = [
     label: "Contact Us",
     url: "contact",
     class: "nav-links smoothscroll"
-  },
-  {
-    label: "Payment Portal",
-    url: "https://sacmgmt.afts.com/",
-    class: "nav-links smoothscroll"
   }
 ]
