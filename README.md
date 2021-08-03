@@ -15,7 +15,7 @@
     <a href="https://github.com/zcorpuz/SacMgmt"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/zcorpuz/SacMgmt">View Demo</a>
+    <a href="https://sac-mgmt.herokuapp.com/">View Demo</a>
     ·
     <a href="https://github.com/zcorpuz/SacMgmt/issues">Report Bug</a>
   </p>

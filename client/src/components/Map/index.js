@@ -1,6 +1,7 @@
 import React from "react";
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
+import './style.css'
 import styled from 'styled-components'
 
 const Wrapper = styled.div`
@@ -25,6 +26,6 @@ export default class Map extends React.Component {
     }
 
     render() {
-        return <Wrapper width="500px" height="400px" id="map" />
+        return <Wrapper id="map" />
     }
 }

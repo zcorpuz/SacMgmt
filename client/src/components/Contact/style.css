@@ -194,3 +194,9 @@ color: #acada8;
 	color: #608dfd;
 	background: #fff;
 }
+
+@media screen and (max-width: 750px) {
+	#contact {
+		padding: 20px 0;
+	}
+}

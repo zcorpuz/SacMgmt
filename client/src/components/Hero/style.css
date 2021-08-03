@@ -19,3 +19,9 @@
   font-family: 'Abril Fatface', cursive;
   text-shadow: 2px 2px black;
 }
+
+@media screen and (max-width: 720px) {
+  .hero h1 {
+    font-size: 5rem;
+  }
+}

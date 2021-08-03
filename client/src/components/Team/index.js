@@ -4,7 +4,7 @@ import "./style.css";
 
 function Team(props) {
   return(
-    <Container className="meet-the-team">
+    <Container className="meet-the-team" id="teammembers">
       <Row>
         <h1 className="col-md-12 team-title">Meet the Team</h1>
       </Row>
